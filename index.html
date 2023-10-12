@@ -1,13 +1,73 @@
-<!Doctype HTML>
+<!DOCTYPE html>
 <html>
-  <head><title>comic</title></head>
-  <body>
-    <header style="color: #000000; font-weight: 300; text-align: center; height: 20px; margin-bottom: 40px; margin-top: 20px;">SAFARI COMICS</header>
-    <section style="margin-left: 40px;">
-      <div style="border: none;">
-        <img src="/home/ubuntu/Pictures/Screenshots/cover.png" alt="" style="border: 1px solid black; border-radius: 5px; "/>
-        <p>Adventures of Byte and Pixie</p> <button style="background-color: cyan; border: 1px solid cyan; border-radius: 5px; width: 100px; color: #000000;"><a style="text-decoration: none; " href="file:///home/ubuntu/Desktop/landing.html">Read</a></button>
+<head>
+  <title>Comic</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+      background-color: hsl(140, 27%, 96%);
+    }
+
+    .header {
+      background-color: gray;
+      color: #000000;
+      font-weight: 300;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .main {
+      display: flex;
+      justify-content: flex-start; /* Align content to the left */
+      margin-top: 20px;
+    }
+
+    .section {
+      margin-left: 20px; /* Adjust the left margin for spacing */
+    }
+
+    .section img {
+      border: 1px solid black;
+      border-radius: 5px;
+      max-width: 75%; /* Set the width to 75% (3/4 of its original size) */
+    }
+
+    .section p {
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .button-container {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .button {
+      background-color: cyan;
+      border: 1px solid cyan;
+      border-radius: 5px;
+      padding: 10px 20px;
+      color: #000;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    SAFARI COMICS
+  </div>
+
+  <div class="main">
+    <section class="section">
+      <div>
+        <img src="https://github.com/treezy254/NCC-Intranet/blob/master/public/cover.png?raw=true" alt="">
+        <p>Adventures of Byte and Pixie</p>
+        <div class="button-container">
+          <a class="button" href="/index.html">Read</a>
+        </div>
       </div>
     </section>
-  </body>
+  </div>
+</body>
 </html>
